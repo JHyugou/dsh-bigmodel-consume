@@ -1,0 +1,6 @@
+# Bundle self-activation patch: 安装进 profile 后（`dsh plugin add <本目录>`
+# 或 Web 端 Plugins 页从路径安装），此 patch 挂载宿主端入口。
+# 浏览器端（侧栏挂件 + 设置页）由 package.json 的 dsh.client 声明自动发现。
+- insert:
+    - id: bigmodel-usage
+      name: dsh-bigmodel-consume

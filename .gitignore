@@ -1,0 +1,13 @@
+# 依赖与本地运行时产物
+node_modules/
+.pnpm-store/
+
+# 本地验证残留
+.smoke-home/
+*.log
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

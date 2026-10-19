@@ -1,0 +1,5 @@
+# 统一 LF 行尾，避免 Windows 提交污染仓库
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

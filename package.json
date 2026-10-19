@@ -1,0 +1,50 @@
+{
+  "name": "dsh-bigmodel-consume",
+  "version": "0.2.0",
+  "description": "在 DSH 对话输入区实时显示智谱 GLM CodingPlan 的 5 小时与每周用量剩余",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "zhipu",
+    "bigmodel",
+    "glm",
+    "coding-plan",
+    "usage"
+  ],
+  "type": "module",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHyugou/dsh-bigmodel-consume.git"
+  },
+  "homepage": "https://github.com/JHyugou/dsh-bigmodel-consume#readme",
+  "bugs": {
+    "url": "https://github.com/JHyugou/dsh-bigmodel-consume/issues"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-model-selection",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
